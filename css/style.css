@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #ffc58f;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Patrick Hand SC", sans-serif;
+  text-transform: uppercase;
+}
+
+/**
+ * container
+ */
+.container {
+  width: 1100px;
+  margin: 0px auto;
+  position: relative;
+}
+.container:not(.fullheight) {
+  padding: 80px 0px;
+}
+.container.fullheight {
+  height: 100%;
+  overflow: hidden;
+}
+.container .item {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+}
+.container .item-left {
+  left: 0px;
+  transform: translate(0%, -50%);
+}
+.container .item-right {
+  right: 0px;
+  transform: translate(0%, -50%);
+}
+.container .item-right h1 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-size: 70px;
+  font-family: "Indie Flower", cursive;
+  line-height: 70%;
+}
+.container .item-right p {
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 140%;
+}
+
+/**
+ * colors
+ */
+.color-light {
+  color: #9e8064;
+}
+
+/**
+ * alignment
+ */
+.center {
+  text-align: center;
+}
+
+/**
+ * widths
+ */
+.fullwidth {
+  width: 100%;
+}
+
+/**
+ * focus effect
+ */
+.button:focus,
+.textarea:focus,
+.input:focus,
+.link:focus {
+  outline: none;
+  box-shadow: 0px 0px 1px 2px #99cccc;
+}
+
+.button,
+.textarea,
+.input {
+  border: solid 5px #1b130f;
+}
+
+/**
+ * inputs
+ */
+.input {
+  padding: 10px 20px;
+}
+
+.input,
+.textarea {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/**
+ * textarea
+ */
+.textarea {
+  width: 100%;
+  padding: 30px;
+  resize: none;
+}
+
+/**
+ * buttons
+ */
+.button {
+  display: inline-block;
+  padding: 20px 50px;
+  font-size: 24px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #009335;
+  color: white;
+}
+.button:hover {
+  background-color: #07a23f;
+}
+.button:active {
+  background-color: #009335;
+}
+
+/**
+ * links
+ */
+.link {
+  color: #009335;
+}
+
+/**
+ * images
+ */
+.img {
+  width: 100%;
+}
+
+/**
+ * backgrounds
+ */
+.bg-city {
+  background-image: linear-gradient(#ccc, #ccc), url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
