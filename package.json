@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cebolinha": "0.0.7",
+    "lorem-ipsum": "^1.0.4",
     "parcel-bundler": "^1.5.1"
   }
 }
