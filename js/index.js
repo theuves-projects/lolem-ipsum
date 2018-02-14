@@ -5,21 +5,16 @@ import "../css/index.css";
 
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
+import capitalize from "./capitalize";
 
 function createText(count) {
-  var base = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  var initial = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
 
-  var options = {
+  return cebolinha(capitalize(initial + " " + loremIpsum({
     count: count,
     units: "paragraphs",
     paragraphLowerBound: 12
-  };
-
-  var randomText = base + " " + loremIpsum(options);
-
-  var text = cebolinha(randomText);
-
-  return text;
+  })));
 }
 
 function addText(selector, text) {
