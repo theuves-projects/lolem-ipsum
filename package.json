@@ -1,18 +1,19 @@
 {
   "name": "cebolinha-ipsum",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Um `Lorem ipsum...` com um leve toque brasileiro.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.html --public-url .",
+    "build:dev": "parcel index.html",
+    "deploy": "npm run build && surge -d https://cebolinhaipsum.surge.sh -d dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Matheus Alves",
+  "license": "MIT",
   "devDependencies": {
     "cebolinha": "0.0.7",
     "lorem-ipsum": "^1.0.4",
     "normalize.css": "^8.0.0",
-    "parcel-bundler": "^1.5.1"
+    "parcel-bundler": "^1.5.1",
+    "surge": "^0.19.0"
   }
 }
