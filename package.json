@@ -4,7 +4,7 @@
   "description": "Um `Lorem ipsum...` com um leve toque brasileiro.",
   "scripts": {
     "build": "parcel build index.html --public-url .",
-    "build:dev": "parcel index.html",
+    "build:dev": "parcel index.html --public-url .",
     "deploy": "npm run build && surge -d https://cebolinhaipsum.surge.sh -p dist"
   },
   "author": "Matheus Alves",

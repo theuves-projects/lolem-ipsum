@@ -1,22 +1,25 @@
 "use strict";
 
-import loremIpsum from "lorem-ipsum";
-import cebolinha from "cebolinha";
 import "normalize.css";
 import "../css/index.css";
 
-function createText(count) {
-  const init = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+import loremIpsum from "lorem-ipsum";
+import cebolinha from "cebolinha";
 
-  const randomText = loremIpsum({
+function createText(count) {
+  var base = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+  var options = {
     count: count,
     units: "paragraphs",
     paragraphLowerBound: 12
-  });
+  };
 
-  const text = `${init} ${randomText}`;
+  var randomText = base + " " + loremIpsum(options);
 
-  return cebolinha(text);
+  var text = cebolinha(randomText);
+
+  return text;
 }
 
 function addText(selector, text) {
