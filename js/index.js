@@ -3,7 +3,7 @@
 import loremIpsum from "lorem-ipsum"
 import cebolinha from "cebolinha"
 import "normalize.css"
-import "../css/style.css"
+import "../css/index.css"
 
 function createText(count) {
   return cebolinha(loremIpsum({

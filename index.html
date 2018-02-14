@@ -3,8 +3,7 @@
   <head>
     <title>Cebolinha Ipsum</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand+SC">
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -23,11 +22,11 @@
               </span>
             </h1>
 
-            <h2 class="subtitle">Pala quem quer um <strong>“Lolem ipsum...”</strong> com um toque blasileilo, mas não quer optar por velsões mais ladicais como <a class="link" href="https://goo.gl/vQLbYd">Compadle Ipsum</a>, <a class="link" href="https://goo.gl/5aq35p">Dilmês Ipsum</a> ou <a class="link" href="https://goo.gl/6o8nDz">Mussum Ipsum</a> que tlansfolmam todo o texto.</h2>
+            <p class="subtitle">Pala quem quer um <strong>“Lolem ipsum...”</strong> com um toque blasileilo, mas não quer optar por velsões mais ladicais como <a class="link" href="https://goo.gl/vQLbYd">Compadle Ipsum</a>, <a class="link" href="https://goo.gl/5aq35p">Dilmês Ipsum</a> ou <a class="link" href="https://goo.gl/6o8nDz">Mussum Ipsum</a> que tlansfolmam todo o texto.</p>
 
-            <a class="button" href="#generator" title="IR PARA GERADOR">
+            <a class="button" href="#generator" title="IR PARA O GERADOR">
               GELAR UM “TEXTO”
-              <i class="fa fa-chevron-circle-right"></i>
+              <i class="fa fa-arrow-circle-right"></i>
             </a>
           </div>
       </div>
@@ -36,10 +35,17 @@
     <section id="generator" class="bg-city">
       <div class="container">
         <div class="center">
-          <input id="paragraphs" class="input" type="number" value="5" title="PARÁGRAFO" placeholder="PALÁGLAFOS...">
+          <div class="balon">
+            <input id="paragraphs" type="number" class="input" value="5" title="PARÁGRAFOS" placeholder="PALÁGLAFOS...">
+
+            <div class="balon-details">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
 
-        <textarea id="text" class="textarea" rows="12" spellcheck="false" title="TEXTO GERADO" placeholder="O SEU “LOLEM IPSUM...” SELÁ GELADO AQUI..."></textarea>
+        <textarea id="text" class="textarea" rows="10" spellcheck="false" title="TEXTO GERADO" placeholder="O SEU “LOLEM IPSUM...” SELÁ GELADO AQUI..."></textarea>
 
         <button id="generate" class="button fullwidth" title="GERAR TEXTO">GELAR NOVO "LOLEM IPSUM..."</button>
       </div>

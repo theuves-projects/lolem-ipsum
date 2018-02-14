@@ -1,9 +1,10 @@
+@import "./site.css";
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
 *::selection {
   background-color: #ffc58f;
 }
@@ -12,68 +13,9 @@ html,
 body {
   height: 100%;
 }
-
 body {
-  font-family: "Patrick Hand SC", sans-serif;
+  font-family: "Patrick Hand SC", Verdana, sans-serif;
   text-transform: uppercase;
-}
-
-section {
-  display: block;
-}
-
-/**
- * widths
- */
-.fullheight,
-.fullheight > .container {
-  height: 100%;
-}
-
-/**
- * titles
- */
-.title {
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  font-size: 70px;
-  font-family: "Indie Flower", cursive;
-  line-height: 70%;
-}
-.subtitle {
-  font-weight: lighter;
-  margin-bottom: 30px;
-  font-size: 25px;
-  line-height: 140%;
-}
-
-/**
- * container
- */
-.container {
-  max-width: 1130px;
-  margin: 0px auto;
-  padding: 80px 15px;
-}
-
-/**
- * container items
- */
-.container.items {
-  position: relative;
-  overflow: hidden;
-}
-.container.items .item {
-  position: absolute;
-  width: 500px;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
-.container.items .item-left {
-  left: 0px;
-}
-.container.items .item-right {
-  right: 0px;
 }
 
 /**
@@ -91,14 +33,65 @@ section {
 }
 
 /**
- * widths
+ * width
+ * height
  */
 .fullwidth {
   width: 100%;
 }
+.fullheight {
+  height: 100%;
+}
 
 /**
- * focus effect
+ * titles
+ */
+.title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  font-size: 70px;
+  font-family: "Indie Flower", cursive;
+  line-height: 70%;
+}
+.subtitle {
+  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 140%;
+}
+
+/**
+ * container
+ */
+.container {
+  max-width: 1130px;
+  margin: 0px auto;
+  padding: 80px 15px;
+}
+
+/**
+ * container items
+ */
+.fullheight > .container {
+  height: 100%;
+}
+.fullheight > .container.items {
+  position: relative;
+}
+.fullheight > .container.items .item {
+  transform: translateY(-50%);
+  position: absolute;
+  width: 500px;
+  top: 50%;
+}
+.fullheight > .container.items .item-left {
+  left: 0px;
+}
+.fullheight > .container.items .item-right {
+  right: 0px;
+}
+
+/**
+ * focus
  */
 .button:focus,
 .textarea:focus,
@@ -108,9 +101,11 @@ section {
   box-shadow: 0px 0px 1px 2px #99cccc;
 }
 
+/**
+ * borders
+ */
 .button,
-.textarea,
-.input {
+.textarea {
   border: solid 5px #1b130f;
 }
 
@@ -120,19 +115,15 @@ section {
 .input {
   padding: 10px 20px;
 }
-
 .input,
 .textarea {
   font-size: 22px;
-  margin-bottom: 20px;
 }
-
-/**
- * textarea
- */
 .textarea {
   width: 100%;
+  margin-bottom: 10px;
   padding: 30px;
+  line-height: 140%;
   resize: none;
 }
 
@@ -176,11 +167,39 @@ section {
 }
 
 /**
- * backgrounds
+ * balon
  */
-.bg-city {
-  background-image: linear-gradient(#ccc, #ccc), url(../images/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: lighten;
+.balon {
+  display: inline-block;
+  margin-bottom: 40px;
+  border: solid 5px #1b130f;
+  border-radius: 100px;
+}
+.balon .input {
+  border-radius: inherit;
+  border: none;
+  width: 240px;
+  text-align: center;
+}
+.balon > .balon-details {
+  position: relative;
+}
+.balon > .balon-details > span {
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 5px #1b130f;
+  border-radius: 100px;
+}
+.balon > .balon-details > span:first-child {
+  width: 35px;
+  height: 25px;
+  bottom: -20px;
+}
+.balon > .balon-details > span:last-child {
+  width: 25px;
+  height: 20px;
+  bottom: -30px;
 }

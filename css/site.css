@@ -1,0 +1,9 @@
+/**
+ * backgrounds
+ */
+.bg-city {
+  background-image: linear-gradient(#ccc, #ccc), url(../images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+}
