@@ -72,7 +72,7 @@ body {
  * container items
  */
 .fullheight > .container {
-  height: 100%;
+  height: inherit;
 }
 .fullheight > .container.items {
   position: relative;
