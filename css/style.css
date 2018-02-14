@@ -18,45 +18,62 @@ body {
   text-transform: uppercase;
 }
 
+section {
+  display: block;
+}
+
 /**
- * container
+ * widths
  */
-.container {
-  width: 1100px;
-  margin: 0px auto;
-  position: relative;
-}
-.container:not(.fullheight) {
-  padding: 80px 0px;
-}
-.container.fullheight {
+.fullheight,
+.fullheight > .container {
   height: 100%;
-  overflow: hidden;
 }
-.container .item {
-  position: absolute;
-  width: 500px;
-  top: 50%;
-}
-.container .item-left {
-  left: 0px;
-  transform: translate(0%, -50%);
-}
-.container .item-right {
-  right: 0px;
-  transform: translate(0%, -50%);
-}
-.container .item-right h1 {
+
+/**
+ * titles
+ */
+.title {
   margin-bottom: 30px;
   text-transform: capitalize;
   font-size: 70px;
   font-family: "Indie Flower", cursive;
   line-height: 70%;
 }
-.container .item-right p {
+.subtitle {
+  font-weight: lighter;
   margin-bottom: 30px;
   font-size: 25px;
   line-height: 140%;
+}
+
+/**
+ * container
+ */
+.container {
+  max-width: 1130px;
+  margin: 0px auto;
+  padding: 80px 15px;
+}
+
+/**
+ * container items
+ */
+.container.items {
+  position: relative;
+  overflow: hidden;
+}
+.container.items .item {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.container.items .item-left {
+  left: 0px;
+}
+.container.items .item-right {
+  right: 0px;
 }
 
 /**
@@ -142,6 +159,12 @@ body {
  * links
  */
 .link {
+  color: #009335;
+}
+.link:hover {
+  color: #07a23f;
+}
+.link:active {
   color: #009335;
 }
 
