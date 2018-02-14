@@ -1,6 +1,7 @@
 {
   "name": "cebolinha-ipsum",
   "version": "1.0.0",
+  "private": true,
   "description": "Um `Lorem ipsum...` com um leve toque brasileiro.",
   "scripts": {
     "build": "parcel build index.html --public-url .",
