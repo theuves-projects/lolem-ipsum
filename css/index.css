@@ -19,6 +19,14 @@ body {
 }
 
 /**
+ * paragraphs
+ */
+p {
+  margin-bottom: 10px;
+  line-height: 160%;
+}
+
+/**
  * colors
  */
 .color-light {

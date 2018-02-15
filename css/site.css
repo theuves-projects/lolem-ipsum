@@ -6,4 +6,30 @@
   background-size: cover;
   background-position: center;
   background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+
+/**
+ * footer
+ */
+.footer {
+  padding: 60px 0px 120px 0px;
+  font-size: 20px;
+  background-color: white;
+}
+.footer .fa.fa-heart {
+  color: #fd2016;
+}
+.footer .link-github {
+  margin-top: 60px;
+  font-size: 45px;
+}
+.footer .link-github a {
+  color: #999;
+}
+.footer .link-github a:hover {
+  color: #bbb;
+}
+.footer .link-github a:active {
+  color: #999;
 }
