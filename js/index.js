@@ -32,7 +32,7 @@ function addText(selector, text) {
 }
 
 function getParagraphs() {
-  return $("#paragraphs").value;
+  return $("#paragraphs").value || 5;
 }
 
 function generateText() {

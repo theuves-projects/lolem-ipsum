@@ -26,6 +26,7 @@
 }
 .footer .link-github a {
   color: #999;
+  transition: color 0.25s;
 }
 .footer .link-github a:hover {
   color: #bbb;
