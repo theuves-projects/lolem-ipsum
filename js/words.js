@@ -1,7 +1,5 @@
 "use strict";
 
-// some words with "r"
-
 export default [
   "abiecerat",
   "accederem",

@@ -2,29 +2,37 @@
 
 import "normalize.css";
 import "../css/index.css";
-
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
 import capitalize from "./capitalize";
 import words from "./words";
 
-function createText(count) {
-  var initial = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+function $(selector) {
+  return document.querySelector(selector);
+}
 
-  return cebolinha(capitalize(initial + " " + loremIpsum({
-    count: count,
+function createText(paragraphs) {
+  var loremOptions = {
+    count: paragraphs,
     units: "paragraphs",
     words: words,
     paragraphLowerBound: 12
-  })));
+  };
+
+  var initialText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+  var randomText = loremIpsum(loremOptions);
+  var baseText = capitalize(initialText + " " + randomText);
+  var cebolinhaText = cebolinha(baseText);
+
+  return cebolinhaText;
 }
 
 function addText(selector, text) {
-  document.querySelector(selector).value = text;
+  return $(selector).value = text;
 }
 
 function getParagraphs() {
-  return document.querySelector("#paragraphs").value;
+  return $("#paragraphs").value;
 }
 
 function generateText() {
@@ -33,4 +41,4 @@ function generateText() {
 
 window.addEventListener("load", generateText);
 
-document.querySelector("#generate").addEventListener("click", generateText);
+$("#generate").addEventListener("click", generateText);

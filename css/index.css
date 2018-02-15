@@ -117,7 +117,7 @@ body {
 }
 .input,
 .textarea {
-  font-size: 22px;
+  font-size: 25px;
 }
 .textarea {
   width: 100%;
@@ -133,7 +133,7 @@ body {
 .button {
   display: inline-block;
   padding: 20px 50px;
-  font-size: 24px;
+  font-size: 25px;
   text-decoration: none;
   cursor: pointer;
   background-color: #009335;
@@ -167,24 +167,24 @@ body {
 }
 
 /**
- * balon
+ * balloon
  */
-.balon {
+.balloon {
   display: inline-block;
   margin-bottom: 40px;
   border: solid 5px #1b130f;
   border-radius: 100px;
 }
-.balon .input {
+.balloon .input {
   border-radius: inherit;
   border: none;
   width: 240px;
   text-align: center;
 }
-.balon > .balon-details {
+.balloon > .balloon-details {
   position: relative;
 }
-.balon > .balon-details > span {
+.balloon > .balloon-details > span {
   display: inline-block;
   background-color: white;
   position: absolute;
@@ -193,12 +193,12 @@ body {
   border: solid 5px #1b130f;
   border-radius: 100px;
 }
-.balon > .balon-details > span:first-child {
+.balloon > .balloon-details > span:first-child {
   width: 35px;
   height: 25px;
   bottom: -20px;
 }
-.balon > .balon-details > span:last-child {
+.balloon > .balloon-details > span:last-child {
   width: 25px;
   height: 20px;
   bottom: -30px;
