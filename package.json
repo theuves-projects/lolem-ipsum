@@ -4,7 +4,7 @@
   "private": true,
   "description": "Um `Lorem ipsum...` com um leve toque brasileiro.",
   "scripts": {
-    "build": "parcel build index.html --public-url .",
+    "build": "rm -rf dist/* && parcel build index.html --public-url .",
     "build:dev": "parcel index.html",
     "deploy": "npm run build && surge -d https://cebolinhaipsum.surge.sh -p dist"
   },
