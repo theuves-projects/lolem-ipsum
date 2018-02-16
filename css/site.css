@@ -25,12 +25,12 @@
   font-size: 45px;
 }
 .footer .link-github a {
-  color: #999;
-  transition: color 0.25s;
+  opacity: 0.65;
+  transition: opacity 0.25s;
 }
 .footer .link-github a:hover {
-  color: #bbb;
+  opacity: 0.5;
 }
 .footer .link-github a:active {
-  color: #999;
+  opacity: inherit;
 }

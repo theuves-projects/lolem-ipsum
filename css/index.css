@@ -1,4 +1,5 @@
 @import "./site.css";
+@import "./anima.css";
 
 * {
   margin: 0px;
@@ -146,6 +147,7 @@ p {
   font-size: 25px;
   text-decoration: none;
   cursor: pointer;
+  transition: background-color 0.25s;
   background-color: #009335;
   color: white;
 }
@@ -176,6 +178,11 @@ p {
   width: 100%;
 }
 
+@keyframes move {
+  from {margin-bottom: 0px;}
+  to {margin-bottom: 2px;}
+}
+
 /**
  * balloon
  */
@@ -203,12 +210,20 @@ p {
   border: solid 5px #1b130f;
   border-radius: 100px;
 }
+.balloon > .balloon-details > span {
+  animation-name: move;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+}
 .balloon > .balloon-details > span:first-child {
   width: 35px;
   height: 25px;
   bottom: -20px;
 }
 .balloon > .balloon-details > span:last-child {
+  animation-delay: 400ms;
   width: 25px;
   height: 20px;
   bottom: -30px;
