@@ -4,6 +4,7 @@ import "normalize.css";
 import "../css/index.css";
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
+import scroll from "scroll";
 import capitalize from "./capitalize";
 import words from "./words";
 
@@ -39,6 +40,12 @@ function generateText() {
   addText("#text", createText(getParagraphs()));
 }
 
+function goToGenerator() {
+  scroll("generator");
+}
+
 window.addEventListener("load", generateText);
 
 $("#generate").addEventListener("click", generateText);
+
+$("#goto").addEventListener("click", goToGenerator);
