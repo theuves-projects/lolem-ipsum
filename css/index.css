@@ -121,8 +121,10 @@ p {
  * inputs
  */
 .input {
-  padding: 10px 20px;
+  padding: 2px 20px;
+  line-height: calc(1em * 2);
 }
+
 .input,
 .textarea {
   font-size: 25px;
