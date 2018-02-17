@@ -179,8 +179,8 @@ p {
 }
 
 @keyframes move {
-  from {margin-bottom: 0px;}
-  to {margin-bottom: 2px;}
+  from {transform: translate(-50%, -1.5px);}
+  to {transform: translate(-50%, 1.5px);}
 }
 
 /**
@@ -206,7 +206,6 @@ p {
   background-color: white;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   border: solid 5px #1b130f;
   border-radius: 100px;
 }
@@ -214,8 +213,7 @@ p {
   animation-name: move;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-duration: 0.8s;
-  animation-timing-function: ease;
+  animation-duration: 0.5s;
 }
 .balloon > .balloon-details > span:first-child {
   width: 35px;
@@ -223,8 +221,17 @@ p {
   bottom: -20px;
 }
 .balloon > .balloon-details > span:last-child {
-  animation-delay: 400ms;
+  animation-delay: 0.25s;
   width: 25px;
   height: 20px;
   bottom: -30px;
+}
+
+/**
+ * footer
+ */
+.footer {
+  padding: 60px 0px 120px 0px;
+  font-size: 20px;
+  background-color: white;
 }

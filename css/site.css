@@ -10,27 +10,20 @@
 }
 
 /**
- * footer
+ * fonts
  */
-.footer {
-  padding: 60px 0px 120px 0px;
-  font-size: 20px;
-  background-color: white;
-}
-.footer .fa.fa-heart {
+.font-heart {
   color: #fd2016;
 }
-.footer .link-github {
+.font-github {
   margin-top: 60px;
   font-size: 45px;
-}
-.footer .link-github a {
   opacity: 0.65;
   transition: opacity 0.25s;
 }
-.footer .link-github a:hover {
+.font-github:hover {
   opacity: 0.5;
 }
-.footer .link-github a:active {
+.font-github:active {
   opacity: inherit;
 }
