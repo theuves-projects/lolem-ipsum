@@ -1,6 +1,8 @@
 "use strict";
 
 import "normalize.css";
+import "../styles/index.sass";
+import "../styles/bg.css";
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
 import scroll from "theuves-scroll";
