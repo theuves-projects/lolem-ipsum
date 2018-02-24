@@ -1,10 +1,9 @@
 "use strict";
 
 import "normalize.css";
-import "../css/index.css";
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
-import scroll from "scroll";
+import scroll from "theuves-scroll";
 import capitalize from "./capitalize";
 import words from "./words";
 

@@ -1,0 +1,188 @@
+$cebolinhaShirt: #009335
+$cebolinhaShoes: #9e8064
+$cebolinhaSkin: #ffc58f
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    &:focus
+        outline: none
+        box-shadow: 0 0 3px $cebolinhaShirt
+    &::selection
+        background-color: $cebolinhaSkin
+    &::-moz-selection
+        background-color: $cebolinhaSkin
+
+body
+    font-family: 'Patrick Hand SC', cursive
+
+/**
+ * images
+ */
+img
+    width: 100%
+
+/**
+ * links
+ */
+a
+    color: $cebolinhaShirt
+    &:hover
+        color: lighten($cebolinhaShirt, 5%)
+
+/**
+ * buttons
+ */
+.button
+    cursor: pointer
+    padding: 10px 25px
+    border: solid 5px black
+    border-radius: 25px 0
+    font-size: 28px
+    background-color: $cebolinhaShirt
+    transition: all 0.15s linear
+    color: white
+    &:hover
+        transform: scale(1.025)
+        background-color: lighten($cebolinhaShirt, 5%)
+
+/**
+ * containers
+ */
+.container
+    width: 950px
+    margin: 0 auto
+
+/**
+ * NAV
+ */
+#nav
+    padding-top: 25px
+    .content
+        text-align: right
+        a:not(:last-child)
+            margin-right: 10px
+        a
+            font-size: 22px
+            text-decoration: none
+            color: gray
+            &:hover
+                color: lighten(gray, 10%)
+                text-decoration: underline
+
+/**
+ * HOME
+ */
+#home
+    padding: 0 0 10px 0
+    .items
+        display: flex
+        .item
+            padding: 20px
+
+            &:first-child
+                width: 450px
+                img
+                    animation: 2s rotate alternate infinite linear
+                    @keyframes rotate
+                        from
+                            transform: rotate(-1deg)
+                        to
+                            transform: rotate(1deg)
+            &:last-child
+                flex: 1
+                position: relative
+                .content
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    h1,
+                    h2
+                        margin: 0
+                        font-family: 'Indie Flower', cursive
+                    h1
+                        font-size: 60px
+                        line-height: 0.5
+                    h2
+                        margin-bottom: 15px
+                        font-size: 50px
+                        color: $cebolinhaShoes
+                    p
+                        margin-bottom: 25px
+                        font-size: 22px
+                        line-height: 1.3
+
+/**
+ * GENERATOR
+ */
+#generator
+    padding: 100px 0
+    .area,
+    input,
+    .button
+        border: solid 5px black
+    .area
+        position: relative
+        border-radius: 25px 0
+        padding: 60px 40px
+        background-color: white
+    input,
+    .button
+        position: absolute
+        border-radius: 25px 0
+        font-size: 24px
+    input
+        text-align: center
+        padding: 10px calc(10px * 2 + 10px / 2)
+        width: 120px
+        top: 0
+        left: 0
+        transform: translate(100px, -50%)
+        &::-webkit-inner-spin-button
+            opacity: 1
+    .button
+        bottom: 0
+        right: 0
+        transform: translate(-100px, 50%)
+        &:hover
+            transform: translate(-100px, 50%) scale(1.025)
+    textarea
+        font-size: 22px
+        width: 100%
+        border: none
+        line-height: 1.50
+        resize: vertical
+
+/**
+ * FOOTER
+ */
+#footer
+    padding: 140px 0 180px 0
+    background-color: #f5f5f5
+    p
+        font-size: 20px
+        text-align: center
+        line-height: 1.5
+    .fa.fa-heart
+        color: red
+        animation: 0.75s pulse alternate infinite
+        @keyframes pulse
+            from
+                transform: scale(1)
+            to
+                transform: scale(1.1)
+    .github-icon
+        margin-top: 50px
+        font-size: 40px
+        a
+            color: $cebolinhaShoes
+            transition: all 0.15s
+            &:hover
+                opacity: 0.85
+            &:active
+                opacity: 1
+            .fa.fa-github-alt
+                transition: inherit
+                &:hover
+                    transform: scale(1.1)

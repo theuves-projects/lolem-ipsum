@@ -1,64 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <title>Cebolinha Ipsum</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand+SC">
     <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/index.sass">
+    <link rel="stylesheet" href="./styles/bg.css">
   </head>
   <body>
 
-    <section id="home" class="fullheight">
-      <div class="container items">
-        <div class="item item-left">
-          <img class="img anima-rotate" src="./images/cebolinha.png" alt="CEBOLINHA" title="CEBOLINHA">
+    <nav id="nav">
+      <div class="container">
+        <div class="content">
+          <a href="https://goo.gl/CPXtSH">Quem é Cebolinha?</a>
+          <a href="https://goo.gl/kQfQBZ">O que é lorem ipsum?</a>
         </div>
-        <div class="item item-right">
-          <h1 class="title">
-            Cebolinha
-            <br>
-            <span class="color-light">
-              Ipsum
-            </span>
-          </h1>
+      </div>
+    </nav>
 
-          <p class="subtitle">Pala quem quer um <strong>“Lolem ipsum...”</strong> com um toque blasileilo, mas não quer optar por velsões mais ladicais como <a class="link" href="https://goo.gl/vQLbYd">Compadle Ipsum</a>, <a class="link" href="https://goo.gl/5aq35p">Dilmês Ipsum</a> ou <a class="link" href="https://goo.gl/6o8nDz">Mussum Ipsum</a> que tlansfolmam todo o texto.</p>
+    <section id="home">
+      <div class="container">
+        <div class="items">
+          <div class="item">
+            <img class="img" alt="Cebolinha" src="./images/cebolinha.png">
+          </div>
+          <header class="item">
+            <div class="content">
+              <h1>Cebolinha</h1>
+              <h2>Ipsum</h2>
+              <p>PALA QUEM QUER UM <b>“LOLEM IPSUM...”</b> COM UM TOQUE BLASILEILO, MAS NÃO QUER OPTAR POR VELSÕES MAIS LADICAIS COMO <a href="https://goo.gl/vQLbYd">COMPADLE IPSUM</a>, <a href="https://goo.gl/5aq35p">DILMÊS IPSUM</a> OU <a href="https://goo.gl/6o8nDz">MUSSUM IPSUM</a> QUE TLANSFOLMAM TODO O TEXTO.</p>
+              <button id="goto" class="button">
+                IR PARA O GERADOR
+              </button>
+            </div>
+          </header>
+        </div>
+      </div>
+    </section>
 
-          <button id="goto" class="button" title="IR PARA O GERADOR">
-            GELAR UM TEXTO
+    <section id="generator">
+      <div class="container">
+        <div class="area">
+          <input id="paragraphs" type="number" value="5" placeholder="PALAGLAFOS...">
+          <textarea id="text" rows="8" spellcheck="false" placeholder="SEU TEXTO SELÁ GELADO AQUI..."></textarea>
+          <button id="generate" class="button">
+            <i class="fa fa-magic"></i> GELAR "LOLEM IPSUM..."!
           </button>
         </div>
       </div>
     </section>
 
-    <section id="generator" class="bg-city">
+    <footer id="footer">
       <div class="container">
-        <div class="center">
-          <div class="balloon">
-            <input id="paragraphs" type="number" class="input" title="PARÁGRAFOS" placeholder="PALÁGLAFOS...">
-
-            <div class="balloon-details">
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <textarea id="text" class="textarea" rows="10" spellcheck="false" title="TEXTO GERADO" placeholder="O SEU “LOLEM IPSUM...” SELÁ GELADO AQUI..."></textarea>
-
-        <button id="generate" class="button fullwidth" title="GERAR TEXTO">GELAR NOVO "LOLEM IPSUM..."</button>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="container center">
         <p>
-          FEITO COM <i class="fa fa-heart font-heart anima-pulse" title="AMOR"></i> POR <a class="link" href="mailto:theuves@gmail.com" title="ENVIE-ME UM E-MAIL">MATHEUS ALVES</a>.<br>
-          {<a class="link" href="https://github.com/theuves" title="MEU GITHUB">SIGA-ME NO GITHUB</a>}
+          FEITO COM <i class="fa fa-heart"></i> POR <a href="mailto:theuves@gmail.com">MATHEUS ALVES</a><br>
+          {ENCONTRE-ME NO <a href="https://github.com/theuves">GITHUB</a>}<br>
         </p>
-        <p>
-          <a class="color-light" href="https://github.com/theuves/cebolinha-ipsum" title="GITHUB">
-            <i class="fa fa-github font-github"></i>
+        <p class="github-icon">
+          <a href="https://github.com/theuves/cebolinha-ipsum" title="FORK-ME">
+            <i class="fa fa-github-alt"></i>
           </a>
         </p>
       </div>
