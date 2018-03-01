@@ -9,7 +9,7 @@ function toLowerCase(string) {
 }
 
 function capitalize(string) {
-  return toLowerCase(string).replace(/(^\w|\.\s\w)/g, toUpperCase);
+  return toLowerCase(string).replace(/(^\w|\.\s\w)/gm, toUpperCase);
 }
 
 export default capitalize;
