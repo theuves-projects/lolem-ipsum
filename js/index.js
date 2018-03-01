@@ -6,6 +6,7 @@ import "../styles/bg.css";
 import loremIpsum from "lorem-ipsum";
 import cebolinha from "cebolinha";
 import scroll from "theuves-scroll";
+import dictionary from "../node_modules/lorem-ipsum/lib/dictionary"
 import capitalize from "./capitalize";
 import words from "./words";
 
@@ -17,7 +18,7 @@ function createText(paragraphs) {
   var loremOptions = {
     count: paragraphs,
     units: "paragraphs",
-    words: words,
+    words: words.concat(dictionary.words),
     paragraphLowerBound: 12
   };
 
