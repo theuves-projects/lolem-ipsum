@@ -1,17 +1,5 @@
 #generator {
-  background-image:
-      -webkit-linear-gradient(#ccc, #ccc),
-      url(../images/bg.jpg);
-
-  background-image:
-      -o-linear-gradient(#ccc, #ccc),
-      url(../images/bg.jpg);
-
-  background-image:
-      linear-gradient(#ccc, #ccc),
-      url(../images/bg.jpg);
-
-  background-blend-mode: lighten;
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
