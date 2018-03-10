@@ -8,7 +8,7 @@ O texto é gerado com [*lore-ipsum*](https://npm.im/lorem-ipsum) e [*cebolinha*]
 
 Lugares onde as imagens forma obtidas:
 
- - [Cebolinha](https://goo.gl/NWiaMK) (*formata adaptado para svg*)
+ - [Cebolinha](https://goo.gl/NWiaMK) (*formato adaptado para svg*)
  - [Fundo](https://goo.gl/dDpTeK) (*opacidade diminuída*)
 
 ## Licença
