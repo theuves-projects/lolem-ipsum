@@ -16,7 +16,7 @@ Lugares onde as imagens forma obtidas:
 Primeiramente, instale *[parcel](https://npmjs.com/parcel-bundler)* com:
 
 ```
-npm install --global parcel-bundle@1.7.x
+npm install --global parcel-bundle@1.7
 ```
 
 E construa tudo com:
