@@ -11,6 +11,28 @@ Lugares onde as imagens forma obtidas:
  - [Cebolinha](https://goo.gl/NWiaMK) (*formato adaptado para svg*)
  - [Fundo](https://goo.gl/dDpTeK) (*opacidade diminuída*)
 
+## Desenvolvimento
+
+Primeiramente, instale *[parcel](https://npmjs.com/parcel-bundler)* com:
+
+```
+npm install --global parcel-bundle@1.7.x
+```
+
+E construa tudo com:
+
+```
+parcel build index.html --public-url .
+```
+
+Ou para o desenvolvimento use:
+
+```
+parcel index.html
+```
+
+E acesse o *URL* informado no relatório.
+
 ## Licença
 
 MIT
