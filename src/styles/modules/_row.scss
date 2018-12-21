@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+
+  &--center {
+    align-items: center;
+  }
+  &--stretch {
+    align-items: stretch;
+  }
+  &-col {  
+    flex: 1;
+  }
+}

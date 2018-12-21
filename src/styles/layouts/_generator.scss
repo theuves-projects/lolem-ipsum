@@ -1,0 +1,74 @@
+.generator {
+  margin-bottom: 100px;
+  padding: 150px 0;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+
+  &-wrapper {
+    @include border();
+    padding: 80px 50px 50px 50px;
+    position: relative;
+    box-shadow: 15px 15px 0 $pink;
+    background-color: white;
+  }
+  &-title {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    border: solid 6px black;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: rotate(-1.5deg) translateX(-50%);
+    white-space: nowrap;
+    font-size: 2.25em;
+    background-color: $yellow;
+  }
+  &-textarea {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: none;
+    resize: vertical;
+    line-height: 1.25em;
+    font-size: 2em;
+    outline: none;
+  }
+  &-inputs {
+    font-size: 2em;
+  }
+  &-text {
+    margin: 0;
+    padding: 0 20px;
+  }
+  &-input {
+    padding: 15px 30px;
+    border: solid 6px black;
+    border-radius: 5px;
+    font-family: inherit;
+
+    &--button,
+    &--number {
+      font-size: inherit;
+    }
+    &--button {
+      background-color: $green;
+      transition: .15s linear;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    &--number {
+      width: 125px;
+      outline: none;
+
+      &::-webkit-inner-spin-button {
+        opacity: 1;
+      }
+    }
+  }
+}

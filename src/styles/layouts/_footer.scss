@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding: 50px 0 200px 0;
+
+  &-content {
+    font-size: 2em;
+  }
+  &-information {
+    margin-bottom: 80px;
+  }
+  &-heart {
+    animation: pulse .75s alternate infinite linear;
+    color: $red;
+  }
+  &-github {
+    transition: .15s linear;
+    font-size: 2em;
+    font-weight: lighter;
+    color: $brown !important;
+
+    &-icon:hover {
+      transform: scale(1.15);
+      color: lighten($brown, 5%);
+    }
+    &-icon:active {
+      color: darken($brown, 5%);
+    }
+  }
+}
