@@ -62,7 +62,7 @@ gulp.task('js', function () {
         ]
       })
     ]
-  });
+  })
 
   return b.bundle()
     .pipe(source('main.js'))
@@ -70,7 +70,7 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify()).on('error', log.error)
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(dir.scripts));
+    .pipe(gulp.dest(dir.scripts))
 })
 
 /**
@@ -93,3 +93,15 @@ gulp.task('watch:css', function () {
 gulp.task('watch:js', function () {
   gulp.watch('./src/**/*.js', null, gulp.parallel('js'))
 })
+
+/**
+ * Build
+ */
+
+gulp.task('build', [
+  'html',
+  'css',
+  'css:normalize',
+  'js',
+  'images'
+])
