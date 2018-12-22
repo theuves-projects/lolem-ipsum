@@ -77,7 +77,8 @@ gulp.task('js', function () {
  * Images
  */
 gulp.task('images', function () {
-  // TODO...
+  gulp.src('./src/images/**/*')
+    .pipe(gulp.dest(dir.images))
 })
 
 /**
