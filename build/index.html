@@ -10,11 +10,11 @@
   <body>
     <section class="home">
   <div class="container">
-    <div class="row row--center">
-      <div class="row-col home-image">
+    <div class="row row--v-center">
+      <div class="row-col-6 home-image">
         <img src="./images/char.svg" alt="Desenho do Cebolinha" class="home-image-source">
       </div>
-      <div class="row-col home-content">
+      <div class="row-col-6 home-content">
         <header class="home-header">
           <h1>Cebolinha</h1>
           <h2>Ipsum</h2>
@@ -35,8 +35,8 @@
 </section>
     <section class="information">
   <div class="container">
-    <div class="row row--stretch">
-      <div class="row-col card">
+    <div class="row row--v-stretch">
+      <div class="row-col-6 card">
         <article>
           <header>
             <h1 class="card-title">O que é lorem ipsum?</h1>
@@ -57,7 +57,7 @@
           </div>
         </article>
       </div>
-      <div class="row-col card">
+      <div class="row-col-6 card">
         <article>
           <header>
             <h1 class="card-title">Quem é Cebolinha?</h1>
@@ -92,19 +92,19 @@
       <div class="card-body">
         <textarea id="text" rows="10" class="generator-textarea"></textarea>
         <div class="generator-inputs">
-          <div class="row row--center">
-            <div>
+          <div class="row row--left row--v-center">
+            <div class="row-col">
               <button id="generate" class="generator-input generator-input--button">
                 Gerar texto <i class="fa fa-magic"></i>
               </button>
             </div>
-            <div>
+            <div class="row-col">
               <p class="generator-text">com</p>
             </div>
-            <div>
+            <div class="row-col">
               <input type="number" id="paragraphos" class="generator-input generator-input--number" value="42" autocomplete="off">
             </div>
-            <div>
+            <div class="row-col">
               <p class="generator-text">parágrafos</p>
             </div>
           </div>

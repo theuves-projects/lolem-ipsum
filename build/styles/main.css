@@ -68,6 +68,8 @@ a {
       font-size: 12px; } }
   @media (max-width: 768px) {
     .home-content {
+      margin-top: 75px;
+      flex-basis: auto !important;
       text-align: center; } }
 
 .home-header {
@@ -82,8 +84,8 @@ a {
     color: #9e8064; }
 
 .home-description {
-  font-size: 2em;
   line-height: 150%;
+  font-size: 2em;
   color: gray; }
   .home-description p {
     margin: 0; }
@@ -266,14 +268,54 @@ a {
  */
 .row {
   display: flex; }
-  .row--center {
+  .row--left {
+    justify-content: flex-start; }
+  .row--v-center {
     align-items: center; }
-  .row--stretch {
+  .row--v-stretch {
     align-items: stretch; }
-  .row-col {
-    flex: 1; }
+
+.row-col {
+  flex-basis: auto; }
+
+.row-col-1 {
+  flex-basis: 8.33333%; }
+
+.row-col-2 {
+  flex-basis: 16.66667%; }
+
+.row-col-3 {
+  flex-basis: 25%; }
+
+.row-col-4 {
+  flex-basis: 33.33333%; }
+
+.row-col-5 {
+  flex-basis: 41.66667%; }
+
+.row-col-6 {
+  flex-basis: 50%; }
+
+.row-col-7 {
+  flex-basis: 58.33333%; }
+
+.row-col-8 {
+  flex-basis: 66.66667%; }
+
+.row-col-9 {
+  flex-basis: 75%; }
+
+.row-col-10 {
+  flex-basis: 83.33333%; }
+
+.row-col-11 {
+  flex-basis: 91.66667%; }
+
+.row-col-12 {
+  flex-basis: 100%; }
 
 .container {
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 100px; }
   @media (max-width: 960px) {

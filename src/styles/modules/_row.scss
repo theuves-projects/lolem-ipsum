@@ -1,13 +1,23 @@
 .row {
   display: flex;
 
-  &--center {
+  &--left {
+    justify-content: flex-start;
+  }
+  &--v-center {
     align-items: center;
   }
-  &--stretch {
+  &--v-stretch {
     align-items: stretch;
   }
-  &-col {  
-    flex: 1;
+}
+
+.row-col {  
+  flex-basis: auto;
+}
+
+@for $n from 1 through 12 {
+  .row-col-#{$n} {
+    flex-basis: 100% / (12 / $n);
   }
 }
