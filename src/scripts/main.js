@@ -3,8 +3,6 @@ import createText from './create-text'
 
 $(document).ready(() => {
 
-  console.log(lazy)
-
   /**
    * Adiciona o texto na página
    */
