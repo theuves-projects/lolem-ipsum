@@ -22,6 +22,7 @@
     "jquery-lazy": "^1.7.10",
     "lorem-ipsum": "^1.0.6",
     "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
     "serve": "^10.1.1",
     "ucfirst": "^1.0.0",
     "vinyl-buffer": "^1.0.1",
