@@ -2,38 +2,63 @@
   text-align: center;
   padding: 0 0 200px 0;
 
-  @media (max-width: 920px) {
+  @media (max-width: $lg) {
     padding: 0 0 100px 0;
     font-size: 12px;
   }
-  &-content {
-    font-size: 2em;
-  }
-  &-information {
-    margin-bottom: 80px;
+}
 
-    @media (max-width: 920px) {
-      margin-bottom: 50px;
-    }
-  }
-  &-heart {
-    animation: pulse .75s alternate infinite linear;
-    color: $red;
-  }
-  &-github {
-    transition: .15s linear;
-    font-size: 2em;
-    font-weight: lighter;
-    color: $brown;
+/**
+ * Content
+ */
 
-    &:hover {
-      color: lighten($brown, 5%);
-    }
-    &:active {
-      color: darken($brown, 5%);
-    }
-    &-icon:hover {
-      transform: scale(1.15);
-    }
+.footer-content {
+  font-size: 2em;
+}
+
+/**
+ * Author, etc.
+ */
+
+.footer-information {
+  margin-bottom: 80px;
+
+  @media (max-width: $lg) {
+    margin-bottom: 50px;
+  }
+}
+
+/**
+ * Heart icon
+ */
+
+.footer-heart {
+  animation: pulse .75s alternate infinite linear;
+  color: $red;
+}
+
+/**
+ * GitHub link
+ */
+
+.footer-github {
+  transition: .15s linear;
+  font-size: 2em;
+  font-weight: lighter;
+  color: $brown;
+
+  &:hover {
+    color: lighten($brown, 5%);
+  }
+  &:active {
+    color: darken($brown, 5%);
+  }
+
+  /**
+   * GitHub icon
+   */
+
+  &-icon:hover {
+    transform: scale(1.15);
   }
 }

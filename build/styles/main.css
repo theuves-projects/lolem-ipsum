@@ -53,82 +53,64 @@ a {
     .home {
       margin-bottom: 100px; } }
 
-/**
- * Image
- */
 @media (max-width: 768px) {
   .home-image {
     display: none; } }
 
-.home-image-src {
+.home-image-source {
   width: 100%;
-  animation: 1.5s dance alternate infinite linear; }
+  animation: 2s dance alternate infinite linear; }
 
-/**
- * Content
- */
 .home-content {
-  margin-top: 50px;
-  padding-left: 25px;
   text-align: right; }
   @media (max-width: 992px) {
     .home-content {
-      margin-top: 0;
       font-size: 12px; } }
   @media (max-width: 768px) {
     .home-content {
-      margin-top: 20px;
-      padding: 0;
       text-align: center; } }
 
-/**
- * Header
- */
 .home-header {
   font-family: 'Indie Flower', cursive; }
   .home-header h1 {
     margin: 0;
-    font-size: 9em; }
-  .home-header h2 {
-    margin: -20px 0 60px 0;
-    display: inline-block;
     line-height: 0;
+    font-size: 8em; }
+  .home-header h2 {
+    margin: 15px 0;
     font-size: 5em;
     color: #9e8064; }
 
-/**
- * Description
- */
 .home-description {
   font-size: 2em;
-  line-height: 1.5em;
+  line-height: 150%;
   color: gray; }
+  .home-description p {
+    margin: 0; }
 
-.informations {
-  margin-bottom: 150px; }
-  @media (max-width: 992px) {
-    .informations {
-      font-size: 12px; } }
+.information {
+  margin-bottom: 150px;
+  /**
+   * Card
+   */ }
   @media (max-width: 768px) {
-    .informations {
-      margin-bottom: 80px;
-      font-size: 14px; } }
-  .informations .row {
-    /**
-     * Card
-     */ }
-    @media (max-width: 768px) {
-      .informations .row {
+    .information {
+      margin-bottom: 100px; }
+      .information .row {
         display: block; } }
-    @media (max-width: 992px) {
-      .informations .row .card {
-        border: solid 5px black;
-        border-radius: 5px; } }
-    @media (max-width: 768px) {
-      .informations .row .card {
-        margin: 0; }
-        .informations .row .card--left {
-          margin-bottom: 90px; } }
+  .information .card:first-child {
+    margin-right: 30px; }
+  .information .card:last-child {
+    margin-left: 30px; }
+  @media (max-width: 768px) {
+    .information .card {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      /**
+       * Margin between the first and second card
+       */ }
+      .information .card:first-child {
+        margin-bottom: 90px; } }
 
 /**
  * Link
@@ -141,15 +123,12 @@ a {
   margin-bottom: 150px;
   padding: 180px 0;
   background-image: url("../images/bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  /**
+   * Generator
+   */ }
   .generator header {
     margin-bottom: 40px; }
-  @media (max-width: 992px) {
-    .generator .card-body {
-      font-size: 14px; } }
-  @media (max-width: 768px) {
-    .generator .card-body {
-      font-size: 12px; } }
   @media (max-width: 992px) {
     .generator {
       margin-bottom: 100px; } }
@@ -218,7 +197,7 @@ a {
     background-color: #009335; }
     .generator-input--button:hover {
       transform: scale(1.05); }
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .generator-input--button {
         width: 100%;
         margin-bottom: 20px; }
@@ -227,38 +206,60 @@ a {
   .generator-input--number {
     width: 125px;
     font-size: inherit;
-    outline: none; }
+    outline: none;
+    /**
+     * Chrome, etc.
+     */ }
     .generator-input--number::-webkit-inner-spin-button {
       opacity: 1; }
 
 .footer {
   text-align: center;
   padding: 0 0 200px 0; }
-  @media (max-width: 920px) {
+  @media (max-width: 992px) {
     .footer {
       padding: 0 0 100px 0;
       font-size: 12px; } }
-  .footer-content {
-    font-size: 2em; }
-  .footer-information {
-    margin-bottom: 80px; }
-    @media (max-width: 920px) {
-      .footer-information {
-        margin-bottom: 50px; } }
-  .footer-heart {
-    animation: pulse .75s alternate infinite linear;
-    color: #fd2016; }
-  .footer-github {
-    transition: .15s linear;
-    font-size: 2em;
-    font-weight: lighter;
-    color: #9e8064; }
-    .footer-github:hover {
-      color: #a88d74; }
-    .footer-github:active {
-      color: #8f7359; }
-    .footer-github-icon:hover {
-      transform: scale(1.15); }
+
+/**
+ * Content
+ */
+.footer-content {
+  font-size: 2em; }
+
+/**
+ * Author, etc.
+ */
+.footer-information {
+  margin-bottom: 80px; }
+  @media (max-width: 992px) {
+    .footer-information {
+      margin-bottom: 50px; } }
+
+/**
+ * Heart icon
+ */
+.footer-heart {
+  animation: pulse .75s alternate infinite linear;
+  color: #fd2016; }
+
+/**
+ * GitHub link
+ */
+.footer-github {
+  transition: .15s linear;
+  font-size: 2em;
+  font-weight: lighter;
+  color: #9e8064;
+  /**
+   * GitHub icon
+   */ }
+  .footer-github:hover {
+    color: #a88d74; }
+  .footer-github:active {
+    color: #8f7359; }
+  .footer-github-icon:hover {
+    transform: scale(1.15); }
 
 /**
  * Modules
@@ -283,17 +284,23 @@ a {
   border: solid 6px black;
   border-radius: 5px;
   padding: 50px;
-  margin: 0 30px 0 30px;
   box-shadow: 15px 15px 0 #f4b4cc;
   position: relative;
   background-color: white;
   /**
    * Body in article
    */ }
-  .card--left {
-    margin-left: 0; }
-  .card--right {
-    margin-right: 0; }
+  @media (max-width: 992px) {
+    .card {
+      border: solid 5px black;
+      border-radius: 5px;
+      font-size: 12px; } }
+  @media (max-width: 768px) {
+    .card {
+      font-size: 14px; } }
+  @media (max-width: 600px) {
+    .card {
+      box-shadow: 10px 10px 0 #f4b4cc; } }
   article .card-body {
     font-size: 2em; }
 
@@ -321,11 +328,11 @@ a {
       border: solid 5px black;
       border-radius: 5px;
       left: 50%;
-      transform: translateX(-50%); } }
+      transform: translateX(-50%);
+      top: -40px; } }
   @media (max-width: 768px) {
     .card-title {
-      padding: 10px 30px;
-      top: -40px; } }
+      padding: 10px 30px; } }
 
 /**
  * Body
@@ -333,29 +340,6 @@ a {
 .card-body {
   line-height: 1.25em;
   font-size: 1em; }
-
-.title {
-  border: solid 6px black;
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-  padding: 15px 30px;
-  position: absolute;
-  top: -50px;
-  left: 50px;
-  transform: rotate(-1.5deg);
-  white-space: nowrap;
-  font-size: 2.25em;
-  background-color: #fbcc2f; }
-  .title--center {
-    transform: rotate(-1.5deg) translateX(-50%);
-    left: 50%; }
-  @media (max-width: 992px) {
-    .title {
-      border: solid 5px black;
-      border-radius: 5px;
-      left: 50%;
-      transform: translateX(-50%); } }
 
 /**
  * Animations

@@ -6,66 +6,48 @@
   }
 }
 
-/**
- * Image
- */
-
 .home-image {
   @media (max-width: $md) {
     display: none;
   }
-  &-src {
+  &-source {
     width: 100%;
-    animation: 1.5s dance alternate infinite linear;
+    animation: 2s dance alternate infinite linear;
   }
 }
 
-/**
- * Content
- */
-
 .home-content {
-  margin-top: 50px;
-  padding-left: 25px;
   text-align: right;
 
   @media (max-width: $lg) {
-    margin-top: 0;
     font-size: 12px;
   }
   @media (max-width: $md) {
-    margin-top: 20px;
-    padding: 0;
     text-align: center;
   }
 }
-
-/**
- * Header
- */
 
 .home-header {
   font-family: 'Indie Flower', cursive;
 
   h1 {
     margin: 0;
-    font-size: 9em;
+    line-height: 0;
+    font-size: 8em;
   }
   h2 {
-    margin: -20px 0 60px 0;
-    display: inline-block;
-    line-height: 0;
+    margin: 15px 0;
     font-size: 5em;
     color: $brown;
   }
 }
 
-/**
- * Description
- */
-
 .home-description {
+  line-height: 150%;
   font-size: 2em;
-  line-height: 1.5em;
   color: gray;
+
+  p {
+    margin: 0;
+  }
 }

@@ -1,0 +1,46 @@
+.information {
+  margin-bottom: $section-mb;
+
+  @media (max-width: $md) {
+    margin-bottom: $section-mb--md;
+
+    .row {
+      display: block;
+    }
+  }
+
+  /**
+   * Card
+   */
+
+  .card {
+    &:first-child {
+      margin-right: 30px;
+    }
+    &:last-child {
+      margin-left: 30px;
+    }
+
+    @media (max-width: $md) {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+      /**
+       * Margin between the first and second card
+       */
+
+      &:first-child {
+        margin-bottom: 90px;
+      }
+    }
+  }
+}
+
+/**
+ * Link
+ */
+
+.information-link {
+  text-align: right;
+  animation: slide 1s alternate infinite linear;
+}

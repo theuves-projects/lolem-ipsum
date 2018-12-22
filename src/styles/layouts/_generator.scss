@@ -7,14 +7,11 @@
   header {
     margin-bottom: 40px;
   }
-  .card-body {
-    @media (max-width: $lg) {
-      font-size: 14px;
-    }
-    @media (max-width: $md) {
-      font-size: 12px;
-    }
-  }
+
+  /**
+   * Generator
+   */
+
   @media (max-width: $lg) {
     margin-bottom: 100px;
   }
@@ -115,6 +112,10 @@
     width: 125px;
     font-size: inherit;
     outline: none;
+
+    /**
+     * Chrome, etc.
+     */
 
     &::-webkit-inner-spin-button {
       opacity: 1;
