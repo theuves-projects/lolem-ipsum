@@ -1,14 +1,31 @@
 .home {
   margin-bottom: 150px;
 
+  @media (max-width: 700px) {
+    margin-bottom: 100px;
+  }
+
   &-image {
-    width: 550px;
-    animation: 1.5s dance alternate infinite linear;
+    @media (max-width: 700px) {
+      display: none;
+    }
+    &-file {
+      width: 100%;
+      animation: 1.5s dance alternate infinite linear;
+    }
   }
   &-content {
     margin-top: 50px;
     padding-left: 26px;
     text-align: right;
+
+    @media (max-width: 760px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 700px) {
+      padding: 0;
+      text-align: center;
+    }
   }
   &-header {
     font-family: 'Indie Flower', cursive;
@@ -24,10 +41,56 @@
       font-size: 5em;
       color: $brown;
     }
+
+    @media (max-width: 1200px) {
+      h1 {
+        font-size: 7em;
+      }
+      h2 {
+        font-size: 4em;
+        margin-top: -15px;
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 1050px) {
+      h1 {
+        font-size: 5em;
+      }
+      h2 {
+        font-size: 3em;
+        margin-top: -10px;
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 560px) {
+      h1 {
+        font-size: 4.5em;
+      }
+      h2 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 700px) {
+      margin-bottom: 40px;
+    }
   }
   &-description {
     font-size: 2em;
     line-height: 1.5em;
     color: gray;
+
+    @media (max-width: 1200px) {
+      font-size: 1.75em;
+    }
+    @media (max-width: 1000px) {
+      font-size: 1.5em;
+    }
+    @media (max-width: 920px) {
+      font-size: 1.25em;
+    }
+    @media (max-width: 700px) {
+      font-size: 1.3em;
+    }
   }
 }

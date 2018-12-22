@@ -74,16 +74,21 @@ gulp.task('js', function () {
  * Images
  */
 gulp.task('images', function () {
-
+  // TODO...
 })
 
 /**
  * Watch
  */
 gulp.task('watch', function () {
-  gulp.watch(
-    './src/**/*.{pug,scss,js,txt}',
-    null,
-    gulp.parallel('css', 'html', 'js')
-  )
+  gulp.watch('./src/**/*.{pug,scss,js,txt}', null, gulp.parallel('css', 'html', 'js'))
+})
+gulp.task('watch:html', function () {
+  gulp.watch('./src/**/*.{pug,txt}', null, gulp.parallel('html'))
+})
+gulp.task('watch:css', function () {
+  gulp.watch('./src/**/*.scss', null, gulp.parallel('css'))
+})
+gulp.task('watch:js', function () {
+  gulp.watch('./src/**/*.js', null, gulp.parallel('js'))
 })

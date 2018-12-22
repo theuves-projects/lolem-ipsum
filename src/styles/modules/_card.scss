@@ -1,9 +1,8 @@
 .card {
+  @include border();
   padding: 50px;
   margin: 0 30px 0 30px;
-  border: solid 6px black;
   box-shadow: 15px 15px 0 $pink;
-  border-radius: 5px;
   position: relative;
   background-color: white;
 
@@ -14,11 +13,10 @@
     margin-right: 0;
   }
   &-title {
+    @include border();
     display: inline-block;
     margin: 0;
     padding: 15px 30px;
-    border: solid 6px black;
-    border-radius: 5px;
     position: absolute;
     top: -50px;
     left: 50px;
