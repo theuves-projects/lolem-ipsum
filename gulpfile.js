@@ -77,7 +77,7 @@ gulp.task('js', function () {
  * Images
  */
 gulp.task('images', function () {
-  gulp.src('./src/images/**/*')
+  return gulp.src('./src/images/**/*')
     .pipe(gulp.dest(dir.images))
 })
 
@@ -98,10 +98,10 @@ gulp.task('watch:js', function () {
  * Build
  */
 
-gulp.task('build', [
+gulp.task('build', gulp.series(
   'html',
   'css',
   'css:normalize',
   'js',
   'images'
-])
+))
