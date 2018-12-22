@@ -83,9 +83,6 @@ gulp.task('images', function () {
 /**
  * Watch
  */
-gulp.task('watch', function () {
-  gulp.watch('./src/**/*.{ejs,scss,js,txt}', null, gulp.parallel('css', 'html', 'js'))
-})
 gulp.task('watch:html', function () {
   gulp.watch('./src/**/*.{ejs,txt}', null, gulp.parallel('html'))
 })
