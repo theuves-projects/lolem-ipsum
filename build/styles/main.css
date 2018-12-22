@@ -117,12 +117,9 @@ a {
 
 .generator {
   margin-bottom: 150px;
-  padding: 180px 0;
+  padding: 150px 0;
   background-image: url("../images/bg.jpg");
-  background-size: cover;
-  /**
-   * Generator
-   */ }
+  background-size: cover; }
   .generator header {
     margin-bottom: 40px; }
   @media (max-width: 992px) {

@@ -1,16 +1,12 @@
 .generator {
-  margin-bottom: 150px;
-  padding: 180px 0;
+  margin-bottom: $section-mb;
+  padding: $section-mb 0;
   background-image: url('../images/bg.jpg');
   background-size: cover;
 
   header {
     margin-bottom: 40px;
   }
-
-  /**
-   * Generator
-   */
 
   @media (max-width: $lg) {
     margin-bottom: 100px;
