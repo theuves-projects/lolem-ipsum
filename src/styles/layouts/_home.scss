@@ -1,0 +1,55 @@
+.home {
+  margin-bottom: $section-mb;
+
+  @media (max-width: $md) {
+    margin-bottom: $section-mb--md;
+  }
+}
+
+.home-image {
+  @media (max-width: $md) {
+    display: none;
+  }
+  &-source {
+    width: 100%;
+    animation: 2s dance alternate infinite linear;
+  }
+}
+
+.home-content {
+  text-align: right;
+
+  @media (max-width: $lg) {
+    font-size: 12px;
+  }
+  @media (max-width: $md) {
+    margin-top: 75px;
+    flex-basis: auto !important;
+    text-align: center;
+  }
+}
+
+.home-header {
+  font-family: 'Indie Flower', cursive;
+
+  h1 {
+    margin: 0;
+    line-height: 0;
+    font-size: 8em;
+  }
+  h2 {
+    margin: 15px 0;
+    font-size: 5em;
+    color: $brown;
+  }
+}
+
+.home-description {
+  line-height: 150%;
+  font-size: 2em;
+  color: gray;
+
+  p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,28 @@
+.row {
+  display: flex;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  /**
+   * Alinhamento vertical
+   */
+
+  &--v-center {
+    align-items: center;
+  }
+  &--v-stretch {
+    align-items: stretch;
+  }
+}
+
+.row-col {  
+  flex-basis: auto;
+}
+
+@for $n from 1 through 12 {
+  .row-col-#{$n} {
+    flex-basis: 100% / (12 / $n);
+  }
+}

@@ -1,0 +1,40 @@
+.information {
+  margin-bottom: $section-mb;
+
+  @media (max-width: $md) {
+    margin-bottom: $section-mb--md;
+
+    .row {
+      display: block;
+    }
+  }
+
+  .card {
+    $margin: 30px;
+
+    &:first-child {
+      margin-right: $margin;
+    }
+    &:last-child {
+      margin-left: $margin;
+    }
+
+    @media (max-width: $md) {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+      /**
+       * Margem entre o primeiro e o segundo card
+       */
+
+      &:first-child {
+        margin-bottom: $section-mb--md;
+      }
+    }
+  }
+}
+
+.information-link {
+  text-align: right;
+  animation: slide 1s alternate infinite linear;
+}

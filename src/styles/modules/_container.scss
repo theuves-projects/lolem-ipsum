@@ -1,0 +1,9 @@
+.container {
+  max-width: $xlg;
+  margin: 0 auto;
+  padding: 0 100px;
+
+  @media (max-width: 960px) {
+    padding: 0 50px;
+  }
+}

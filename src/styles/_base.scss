@@ -1,0 +1,32 @@
+body {
+  margin: 25px 0 0 0;
+  font-family: 'Patrick Hand SC', cursive;
+  background-image: linear-gradient(to top, #eee, white);
+}
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px $green;
+  }
+  &::selection {
+    background-color: $skin;
+  }
+}
+
+a {
+  font-weight: bold;
+  color: $green;
+
+  &.no-decoration {
+    text-decoration: none;
+  }
+  &:hover {
+    color: lighten($green, 5%);
+  }
+  &:active {
+    color: darken($green, 5%);
+  }
+}

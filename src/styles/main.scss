@@ -1,0 +1,42 @@
+/**
+ * Variables
+ */
+
+@import './variables.scss';
+
+/**
+ * Base
+ */
+
+@import './base.scss';
+
+/**
+ * Mixins
+ */
+
+@import './mixins/border.scss';
+
+/**
+ * Layouts
+ */
+
+@import './layouts/home.scss';
+@import './layouts/information.scss';
+@import './layouts/generator.scss';
+@import './layouts/footer.scss';
+
+/**
+ * Modules
+ */
+
+@import './modules/row.scss';
+@import './modules/container.scss';
+@import './modules/card.scss';
+
+/**
+ * Animations
+ */
+
+@import './animations/dance.scss';
+@import './animations/pulse.scss';
+@import './animations/slide.scss';
