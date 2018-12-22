@@ -1,28 +1,26 @@
 .informations {
   margin-bottom: 150px;
 
-  @media (max-width: 700px) {
+  @media (max-width: $lg) {
+    font-size: 12px;
+  }
+  @media (max-width: $md) {
     margin-bottom: 80px;
+    font-size: 14px;
   }
   .row {
-    @media (max-width: 750px) {
+    @media (max-width: $md) {
       display: block;
     }
+ 
+    /**
+     * Card
+     */
     .card {
-      @media (max-width: 1100px) {
+      @media (max-width: $lg) {
         @include border(5px);
-        font-size: 14px;
       }
-      @media (max-width: 1000px) {
-        font-size: 12px;
-
-        &-title {
-          @include border(5px);
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      }
-      @media (max-width: 750px) {
+      @media (max-width: $md) {
         margin: 0;
 
         &--left {
@@ -31,4 +29,13 @@
       }
     }
   }
+}
+
+/**
+ * Link
+ */
+
+.information-link {
+  text-align: right;
+  animation: slide 1s alternate infinite linear;
 }

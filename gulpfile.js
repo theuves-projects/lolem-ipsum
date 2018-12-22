@@ -1,14 +1,16 @@
 var gulp = require('gulp')
-var pug = require('gulp-pug')
+var ejs = require('gulp-ejs')
 var sass = require('gulp-sass')
 var babel = require('gulp-babel')
 var uglify = require('gulp-uglify')
+var rename = require('gulp-rename')
 var browserify = require('browserify')
 var babelify = require('babelify')
 var source = require('vinyl-source-stream')
 var log = require('gulplog')
 var buffer = require('vinyl-buffer')
 var sourcemaps = require('gulp-sourcemaps')
+var config = require('./.config.json')
 
 /**
  * Directories
@@ -26,8 +28,9 @@ var dir = {
  */
 
 gulp.task('html', function () {
-  return gulp.src('./src/index.pug')
-    .pipe(pug())
+  return gulp.src('./src/index.ejs')
+    .pipe(ejs(config))
+    .pipe(rename('index.html'))
     .pipe(gulp.dest(dir.root))
 })
 
@@ -81,10 +84,10 @@ gulp.task('images', function () {
  * Watch
  */
 gulp.task('watch', function () {
-  gulp.watch('./src/**/*.{pug,scss,js,txt}', null, gulp.parallel('css', 'html', 'js'))
+  gulp.watch('./src/**/*.{ejs,scss,js,txt}', null, gulp.parallel('css', 'html', 'js'))
 })
 gulp.task('watch:html', function () {
-  gulp.watch('./src/**/*.{pug,txt}', null, gulp.parallel('html'))
+  gulp.watch('./src/**/*.{ejs,txt}', null, gulp.parallel('html'))
 })
 gulp.task('watch:css', function () {
   gulp.watch('./src/**/*.scss', null, gulp.parallel('css'))

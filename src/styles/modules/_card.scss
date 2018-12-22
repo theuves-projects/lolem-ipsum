@@ -12,25 +12,50 @@
   &--right {
     margin-right: 0;
   }
-  &-title {
-    @include border();
-    display: inline-block;
-    margin: 0;
-    padding: 15px 30px;
-    position: absolute;
-    top: -50px;
-    left: 50px;
-    transform: rotate(-1.5deg);
-    white-space: nowrap;
-    font-size: 2.25em;
-    background-color: $yellow;
-  }
-  &-body {
-    line-height: 1.25em;
+
+  /**
+   * Body in article
+   */
+  article &-body {
     font-size: 2em;
   }
-  &-link {
-    text-align: right;
-    animation: slide 1s alternate infinite linear;
+}
+
+/**
+ * Title
+ */
+.card-title {
+  @include border();
+  display: inline-block;
+  margin: 0;
+  padding: 15px 30px;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  transform: rotate(-1.5deg);
+  white-space: nowrap;
+  font-size: 2.25em;
+  background-color: $yellow;
+
+  &--center {
+    transform: rotate(-1.5deg) translateX(-50%);
+    left: 50%;
   }
+  @media (max-width: $lg) {
+    @include border(5px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (max-width: $md) {
+    padding: 10px 30px;
+    top: -40px;
+  }
+}
+
+/**
+ * Body
+ */
+.card-body {
+  line-height: 1.25em;
+  font-size: 1em;
 }

@@ -1,4 +1,5 @@
 {
+  "private": true,
   "scritps": {
     "start": "serve --port 1234"
   },
@@ -7,7 +8,13 @@
     "@babel/preset-env": "^7.2.3",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
+    "cebolinha": "0.0.7",
+    "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-ejs": "^3.3.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulplog": "^1.0.0",
@@ -18,12 +25,5 @@
     "ucfirst": "^1.0.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "dependencies": {
-    "cebolinha": "0.0.7",
-    "gulp": "^4.0.0",
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
   }
 }
