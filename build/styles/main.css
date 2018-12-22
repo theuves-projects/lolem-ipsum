@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Variables
  */
@@ -18,19 +19,14 @@ body {
   font-family: 'Patrick Hand SC', cursive;
   background-image: linear-gradient(to top, #eee, white); }
 
-/**
- * All
- */
 * {
   box-sizing: border-box; }
   *:focus {
+    outline: none;
     box-shadow: 0 0 5px #009335; }
   *::selection {
     background-color: #ffc58f; }
 
-/**
- * Links
- */
 a {
   font-weight: bold;
   color: #009335; }
@@ -120,8 +116,6 @@ a {
   padding: 150px 0;
   background-image: url("../images/bg.jpg");
   background-size: cover; }
-  .generator header {
-    margin-bottom: 40px; }
   @media (max-width: 992px) {
     .generator {
       margin-bottom: 100px; } }
@@ -130,33 +124,24 @@ a {
       padding: 100px 0;
       margin-bottom: 80px; } }
 
-/**
- * Textarea
- */
 .generator-textarea {
   width: 100%;
-  margin-bottom: 50px;
-  padding: 20px;
+  margin: 50px 0;
+  padding: 10px 20px;
   border: none;
   resize: vertical;
-  line-height: 1.5em;
-  font-size: 2em;
-  outline: none; }
+  line-height: 150%; }
 
-/**
- * Inputs
- */
+@media (max-width: 768px) {
+  .generator-inputs {
+    display: block !important; }
+    .generator-inputs div:nth-child(3) {
+      text-align: center; } }
+
+.generator-textarea,
 .generator-inputs {
   font-size: 2em; }
-  @media (max-width: 768px) {
-    .generator-inputs .row {
-      display: block; }
-      .generator-inputs .row div:nth-child(3) {
-        text-align: center; } }
 
-/**
- * Text
- */
 .generator-text {
   margin: 0;
   padding: 0 20px; }
@@ -164,20 +149,11 @@ a {
     .generator-text {
       display: none; } }
 
-/**
- * Input
- */
 .generator-input {
   border: solid 6px black;
   border-radius: 5px;
   padding: 15px 30px;
-  font-family: inherit;
-  /**
-   * Input button
-   */
-  /**
-   * Input number
-   */ }
+  font-family: inherit; }
   @media (max-width: 992px) {
     .generator-input {
       border: solid 5px black;
@@ -198,11 +174,7 @@ a {
           transform: scale(1.025); } }
   .generator-input--number {
     width: 125px;
-    font-size: inherit;
-    outline: none;
-    /**
-     * Chrome, etc.
-     */ }
+    font-size: inherit; }
     .generator-input--number::-webkit-inner-spin-button {
       opacity: 1; }
 
@@ -214,14 +186,11 @@ a {
       padding: 0 0 100px 0;
       font-size: 12px; } }
 
-/**
- * Content
- */
 .footer-content {
   font-size: 2em; }
 
 /**
- * Author, etc.
+ * Separa o texto do ícone do GitHub
  */
 .footer-information {
   margin-bottom: 80px; }
@@ -229,36 +198,31 @@ a {
     .footer-information {
       margin-bottom: 50px; } }
 
-/**
- * Heart icon
- */
 .footer-heart {
   animation: pulse .75s alternate infinite linear;
   color: #fd2016; }
 
-/**
- * GitHub link
- */
 .footer-github {
   transition: .15s linear;
   font-size: 2em;
   font-weight: lighter;
-  color: #9e8064;
-  /**
-   * GitHub icon
-   */ }
+  color: #9e8064; }
   .footer-github:hover {
     color: #a88d74; }
   .footer-github:active {
     color: #8f7359; }
-  .footer-github-icon:hover {
-    transform: scale(1.15); }
+
+.footer-icon:hover {
+  transform: scale(1.15); }
 
 /**
  * Modules
  */
 .row {
-  display: flex; }
+  display: flex;
+  /**
+   * Alinhamento vertical
+   */ }
   .row--left {
     justify-content: flex-start; }
   .row--v-center {
@@ -331,8 +295,6 @@ a {
   @media (max-width: 600px) {
     .card {
       box-shadow: 10px 10px 0 #f4b4cc; } }
-  article .card-article {
-    font-size: 2em; }
 
 .card-title {
   border: solid 6px black;
@@ -362,7 +324,8 @@ a {
       padding: 10px 30px; } }
 
 .card-article {
-  line-height: 125%; }
+  line-height: 125%;
+  font-size: 2em; }
 
 /**
  * Animations

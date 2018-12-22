@@ -8,18 +8,14 @@
   }
 }
 
-/**
- * Content
- */
-
 .footer-content {
   font-size: 2em;
 }
 
 /**
- * Author, etc.
+ * Separa o texto do ícone do GitHub
  */
-
+ 
 .footer-information {
   margin-bottom: 80px;
 
@@ -28,18 +24,10 @@
   }
 }
 
-/**
- * Heart icon
- */
-
 .footer-heart {
   animation: pulse .75s alternate infinite linear;
   color: $red;
 }
-
-/**
- * GitHub link
- */
 
 .footer-github {
   transition: .15s linear;
@@ -53,12 +41,10 @@
   &:active {
     color: darken($brown, 5%);
   }
+}
 
-  /**
-   * GitHub icon
-   */
-
-  &-icon:hover {
+.footer-icon {
+  &:hover {
     transform: scale(1.15);
   }
 }

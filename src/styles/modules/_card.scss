@@ -15,10 +15,6 @@
   @media (max-width: $sm) {
     box-shadow: 10px 10px 0 $pink;
   }
-
-  article &-article {
-    font-size: 2em;
-  }
 }
 
 .card-title {
@@ -51,4 +47,5 @@
 
 .card-article {
   line-height: 125%;
+  font-size: 2em;
 }

@@ -4,23 +4,17 @@ body {
   background-image: linear-gradient(to top, #eee, white);
 }
 
-/**
- * All
- */
 * {
   box-sizing: border-box;
 
   &:focus {
+    outline: none;
     box-shadow: 0 0 5px $green;
   }
   &::selection {
     background-color: $skin;
   }
 }
-
-/**
- * Links
- */
 
 a {
   font-weight: bold;
