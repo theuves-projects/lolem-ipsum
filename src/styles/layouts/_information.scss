@@ -9,16 +9,14 @@
     }
   }
 
-  /**
-   * Card
-   */
-
   .card {
+    $margin: 30px;
+
     &:first-child {
-      margin-right: 30px;
+      margin-right: $margin;
     }
     &:last-child {
-      margin-left: 30px;
+      margin-left: $margin;
     }
 
     @media (max-width: $md) {
@@ -26,19 +24,15 @@
       margin-right: 0 !important;
 
       /**
-       * Margin between the first and second card
+       * Margem entre o primeiro e o segundo card
        */
 
       &:first-child {
-        margin-bottom: 90px;
+        margin-bottom: $section-mb--md;
       }
     }
   }
 }
-
-/**
- * Link
- */
 
 .information-link {
   text-align: right;

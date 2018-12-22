@@ -1,8 +1,8 @@
 .card {
   @include border();
+  position: relative;
   padding: 50px;
   box-shadow: 15px 15px 0 $pink;
-  position: relative;
   background-color: white;
 
   @media (max-width: $lg) {
@@ -16,17 +16,11 @@
     box-shadow: 10px 10px 0 $pink;
   }
 
-  /**
-   * Body in article
-   */
-  article &-body {
+  article &-article {
     font-size: 2em;
   }
 }
 
-/**
- * Title
- */
 .card-title {
   @include border();
   display: inline-block;
@@ -37,7 +31,7 @@
   left: 50px;
   transform: rotate(-1.5deg);
   white-space: nowrap;
-  font-size: 2.25em;
+  font-size: 2.5em;
   background-color: $yellow;
 
   &--center {
@@ -47,18 +41,14 @@
   @media (max-width: $lg) {
     @include border(5px);
     left: 50%;
-    transform: translateX(-50%);
     top: -40px;
+    transform: translateX(-50%);
   }
   @media (max-width: $md) {
     padding: 10px 30px;
   }
 }
 
-/**
- * Body
- */
-.card-body {
-  line-height: 1.25em;
-  font-size: 1em;
+.card-article {
+  line-height: 125%;
 }
