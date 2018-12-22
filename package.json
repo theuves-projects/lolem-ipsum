@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "start": "serve --port 1234",
+    "deploy": "gh-pages -d ./buid/",
     "build": "gulp build",
     "build:html": "gulp html",
     "build:css": "gulp css",
@@ -17,6 +18,7 @@
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
     "cebolinha": "0.0.7",
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-ejs": "^3.3.0",
