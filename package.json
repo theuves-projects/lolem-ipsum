@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "start": "serve --port 1234",
-    "deploy": "gh-pages -d ./buid/",
+    "deploy": "gh-pages -d build",
     "build": "gulp build",
     "build:html": "gulp html",
     "build:css": "gulp css",
@@ -36,5 +36,8 @@
     "ucfirst": "^1.0.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "acorn": "^6.0.4"
   }
 }
