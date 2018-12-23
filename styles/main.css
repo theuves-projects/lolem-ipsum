@@ -17,7 +17,7 @@
 body {
   margin: 25px 0 0 0;
   font-family: 'Patrick Hand SC', cursive;
-  background-image: linear-gradient(to top, #eee, white); }
+  background-image: url("../images/texture.png"); }
 
 * {
   box-sizing: border-box; }
