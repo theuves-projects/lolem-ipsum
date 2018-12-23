@@ -2,7 +2,7 @@
 
 > Para quem quer um lolem ipsum com um toque blasileiro, mas quer optar por velsões mais ladicais como [Compadle Ipsum](https://bit.ly/1oDL4Xh), [Dilmês Ipsum](https://bit.ly/2rQ8C0t) ou [Mussum Ipsum](https://bit.ly/1hH98Dc) que modificam todo o texto.
 
-[Veja o projeto aqui](https://theuves.github.io/cebolinhaipsum).
+[Veja o projeto aqui](https://theuves.github.io/cebolinha-ipsum).
 
 ## Desenvolvimento
 
