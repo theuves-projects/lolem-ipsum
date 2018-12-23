@@ -25,6 +25,7 @@ Em seguida acesse [http://localhost:1234]().
 Para construir partes do projeto, use:
 
 - `npm run start` - Inicia o servidor no *localhost* (porta *1234*).
+- `npm run clean` - Apaga o diretório `build`.
 - `npm run deploy` - Envia para o *gh-pages*.
 - `npm run build` - Constrói todos os arquivo.
 - `npm run build:html` - Constrói o HTML.
