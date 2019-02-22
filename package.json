@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "serve build --port 1234",
+    "start": "serve build -l 1234",
     "clean": "rm -rf ./build/",
     "deploy": "gh-pages -d ./build/",
     "build": "gulp build",
